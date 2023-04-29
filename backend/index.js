@@ -16,7 +16,7 @@ mongoose.connect(URI)
 })
 .catch((err)=>{
     console.log("mongoose no gree connect")
-    console.log(error)
+    console.log(err)
 })
 // Middleware
 app.use(express.urlencoded({extended:true}));

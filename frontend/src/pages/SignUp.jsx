@@ -7,7 +7,7 @@ const SignUp = () => {
   const [lastname, setlastname] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
- const [message, setmessage] = useState("")
+  const [message, setmessage] = useState("")
   let url = "http://localhost:5000/user/register"
   let navigate = useNavigate()
   const signup = ()=>{
@@ -54,6 +54,7 @@ const SignUp = () => {
         onChange={(e) => setpassword(e.target.value)}
       />
       <button onClick={signup}>Sign Up</button>
+    
     </>
   );
 };
