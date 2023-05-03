@@ -8,7 +8,7 @@ const SignUp = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [message, setmessage] = useState("")
-  let url = "http://localhost:5000/user/register"
+  let url = "https://test123-2d3i.onrender.com/user/register"
   let navigate = useNavigate()
   const signup = ()=>{
     axios.post(url,{
